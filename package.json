@@ -1,0 +1,29 @@
+{
+  "name": "blobscriptions-hardhat",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "KyrylR",
+  "description": "",
+  "scripts": {
+    "prepare": "husky",
+    "build": "bunx tsc",
+    "lint-fix": "bun run lint-ts-fix && bun run lint-json-fix",
+    "lint-json-fix": "prettier --write \"./**/*.json\"",
+    "lint-ts-fix": "prettier --write \"./**/*.ts\""
+  },
+  "dependencies": {
+    "c-kzg": "^2.1.2",
+    "cbor": "^9.0.2",
+    "dotenv": "^16.4.5",
+    "viem": "^2.9.9"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.0.12",
+    "prettier": "^3.2.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  },
+  "trustedDependencies": [
+    "c-kzg"
+  ]
+}

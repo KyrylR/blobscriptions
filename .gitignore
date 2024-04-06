@@ -1,0 +1,16 @@
+node_modules
+.env
+.DS_Store
+
+# Hardhat files
+cache
+artifacts
+coverage.json
+coverage
+trusted_setup/trusted_setup_4096.txt
+
+# Typechain generated files
+generated-types
+
+# Hardhat migrate
+.storage.json
